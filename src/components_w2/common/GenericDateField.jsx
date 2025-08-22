@@ -32,22 +32,35 @@ export const GenericDateField = ({
     return label;
   };
 
+  const fallbackStyle = {
+    display: 'inline-flex',
+    alignItems: 'center',
+    background: '#ffffff',
+    border: '1px solid #d0d5dd',
+    borderRadius: 6,
+    padding: '8px 10px',
+    height: 40,
+    boxSizing: 'border-box',
+    width: '100%',
+  };
+
+  const inputStyle = { border: 'none', outline: 'none', background: 'transparent', fontSize: 14, width: '100%', height: '100%', padding: '0 4px', boxSizing: 'border-box' };
+
   return (
     <div className={`field ${className}`.trim()}>
       <div className="label">
         {renderLabel()}
       </div>
-      <div className="input-frame fc-inputFrame">
-        <div className="left-content fc-leftContent">
-          <input
-            id={id}
-            className="date-input fc-dateInput"
-            type="date"
-            value={value}
-            onChange={onChange}
-            {...props}
-          />
-        </div>
+      <div className="simple-input-frame" style={fallbackStyle}>
+        <input
+          id={id}
+          className="simple-input"
+          type="date"
+          value={value}
+          onChange={onChange}
+          style={inputStyle}
+          {...props}
+        />
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Frame1321314586.module.css';
 import TrashIcon from '../assets/trash-red.svg';
+import SubmitButton2 from './SubmitButton2';
+import Frame1272628575 from './Frame1272628575';
 
 const Frame1321314586 = () => {
   return (
@@ -31,6 +33,13 @@ const Frame1321314586 = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* Comment input added above submit button */}
+      <div style={{ marginTop: 12 }}>
+        <Frame1272628575 />
+      </div><br /><br />
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 12 }}>
+        <SubmitButton2 onClick={() => { /* placeholder action */ }} />
       </div>
     </div>
   );

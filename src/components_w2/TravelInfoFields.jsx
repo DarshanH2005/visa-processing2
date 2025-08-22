@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './TravelInfoFields.module.css';
+import Button from './Button';
 
 const Field = ({ label, children, className = '' }) => (
   <div className={`${styles.field} ${className}`.trim()}>
@@ -50,6 +51,10 @@ export default function TravelInfoFields() {
           onChange={(e) => setToDate(e.target.value)}
         />
       </Field>
+      {/* Button added to the end of the input box */}
+      <div className={styles.buttonWrap}>
+        <Button onClick={() => { /* intentionally empty for now */ }}>Add</Button>
+      </div>
     </div>
   );
 }

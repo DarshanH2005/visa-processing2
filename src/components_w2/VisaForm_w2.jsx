@@ -78,6 +78,7 @@ const VisaForm = () => {
     <div style={{ height: 12 }} />
     <Frame1321314629 />
   <div style={{ height: 18 }} />
+  <br />
   <Frame1321314586 />
   <br />
 

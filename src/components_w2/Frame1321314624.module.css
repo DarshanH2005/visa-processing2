@@ -36,6 +36,51 @@
   padding: 0 12px;
 }
 
+/* Compact frame variant: smaller input footprint used for date-like inputs */
+.compactFrame {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e6e9ec;
+  border-radius: 6px;
+  padding: 6px 8px;
+  height: 36px;
+}
+
+.compactLeftContent {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+.dateInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #1f2933;
+  background: transparent;
+  padding: 0 4px;
+}
+
+/* On wider screens make the compact inputs slightly smaller (tighter padding and font) */
+@media (min-width: 900px) {
+  .compactFrame {
+    padding: 4px 8px;
+    height: 32px;
+  }
+
+  .dateInput {
+    font-size: 13px;
+    padding: 0 2px;
+  }
+
+  /* slightly reduce gaps between fields on wide layouts */
+  .container {
+    gap: 10px;
+  }
+}
+
 .compactLeftContent { display: flex; align-items: center; width: 100%; }
 .compactLeftContent input { width: 100%; border: none; background: transparent; outline: none; font-size: 13px; color: #202224; padding: 6px 0; }
 

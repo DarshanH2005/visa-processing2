@@ -10,13 +10,16 @@
 .field {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .leftGroup {
   display: grid;
   grid-template-columns: 1fr 1fr; /* two equal date fields */
-  gap: 24px;
+  gap: 0; /* removed spacing between the two date fields as requested */
   width: 100%;
+  align-items: stretch;
 }
 
 .label {
@@ -73,6 +76,37 @@
   font-size: 14px;
 }
 
+/* Module-scoped simple input frame to avoid global fc-* conflicts */
+.simpleInputFrame {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 8px 10px;
+  height: 45px;
+  box-sizing: border-box;
+  width: 94.5%; /* ensure it fills its grid column */
+}
+
+.simpleInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+/* Stronger selector to prevent global formControls rules from forcing larger heights */
+.simpleInputFrame input[type="date"].simpleInput {
+  height: 100% !important;
+  padding: 0 6px !important;
+  box-sizing: border-box !important;
+}
+
 .iconRight {
   width: 28px;
   height: 28px;
@@ -81,11 +115,23 @@
   cursor: pointer;
 }
 
+/* Slightly nudge the second date field left so it sits closer to the first field */
+.leftGroup > .field:nth-child(2) .simpleInputFrame {
+  margin-left: -17px;
+}
+
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
   }
   .leftGroup {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  /* undo nudges on small screens where fields stack */
+  .leftGroup > .field:nth-child(2) .simpleInputFrame {
+    margin-left: 0;
   }
 }
