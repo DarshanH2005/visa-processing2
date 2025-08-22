@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 384px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border: 1px dashed #d1d5db;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.iconWrap {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  width: 48px;
+  height: 48px;
+}
+.textBlock {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #202224;
+  margin: 0;
+}
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b5563;
+  font-size: 14px;
+}
+.dot {
+  width: 4px;
+  height: 4px;
+  background: #98a2b3;
+  border-radius: 50%;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.btnSmall {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #38aee0;
+  background: transparent;
+  color: #003e52;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btnLarge {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #38aee0;
+  background: #ffffff;
+  color: #38aee0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.iconSmall {
+  width: 14px;
+  height: 14px;
+}
+.fileName {
+  font-size: 13px;
+  color: #0f172a;
+  margin-left: 8px;
+}
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 6px;
+}
+@media (max-width: 420px) {
+  .container { padding: 8px; }
+  .meta { font-size: 13px; }
+  .title { font-size: 13px; }
+}

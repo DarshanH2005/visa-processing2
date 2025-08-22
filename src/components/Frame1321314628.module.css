@@ -1,0 +1,60 @@
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 24px; /* add spacing below comment block to push controls down */
+}
+
+.label {
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #101928;
+  margin-bottom: 8px;
+}
+
+.inputFrame {
+  background: #ffffff;
+  border: 0.5px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 12px 16px;
+  box-shadow: none;
+}
+
+.innerRow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.placeholderText {
+  font-size: 16px;
+  color: #000000;
+  opacity: 0.9;
+  min-width: 180px;
+}
+
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 120px;
+  resize: none;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  color: #0b1220;
+  background: transparent;
+}
+
+.textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 720px) {
+  .innerRow {
+    flex-direction: column;
+  }
+}

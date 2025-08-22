@@ -1,0 +1,43 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f6f7f8; /* subtle toolbar background */
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 8px 8px 0 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #6b7280; /* muted icon color */
+}
+
+.btn:hover {
+  background: #eef3f5;
+}
+
+.icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+}
+
+.icon svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

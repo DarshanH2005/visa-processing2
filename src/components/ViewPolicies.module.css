@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+  color: #606060; /* from spec */
+  /* match submit button height so both can be vertically centered in the same row */
+  height: 38px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.iconWrap {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 14px;
+  color: #606060;
+}
+
+@media (max-width: 480px) {
+  .text { font-size: 13px; }
+}
+
+.active {
+  background: rgba(96,96,96,0.06);
+  border-radius: 4px;
+  padding: 4px 8px;
+}

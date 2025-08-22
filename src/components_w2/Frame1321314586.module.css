@@ -1,0 +1,138 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0f1724;
+  margin-bottom: 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  background: #eff6ff;
+  border-radius: 4px 4px 0 0;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  font-weight: 700;
+  color: #202224;
+}
+
+.tableBody {
+  background: #fff;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.empty {
+  padding: 16px;
+  color: #667085;
+}
+
+.colCountry { grid-column: 1; }
+.colVisaType { grid-column: 2; }
+.colValidFrom { grid-column: 3; }
+.colValidTo { grid-column: 4; }
+.colEntries { grid-column: 5; }
+.colAction { grid-column: 6; display:flex; justify-content:center; }
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .headerRow, .row {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: row;
+  }
+  .card { padding: 12px; }
+}
+
+/* Global selectors for the supplied underscore-prefixed markup */
+:global(._table_ywcap_29) {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+:global(._tableHeader_ywcap_39) {
+  background: #eff6ff;
+  border-radius: 4px;
+}
+
+:global(._headerRow_ywcap_49) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  font-weight: 700;
+  color: #202224;
+}
+
+:global(._tableBody_ywcap_69) { background: #fff; }
+
+:global(._row_ywcap_77) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 12px 8px;
+  border-bottom: 1px solid #eef2f7;
+}
+
+:global(._colCountry_ywcap_105),
+:global(._colVisaType_ywcap_107),
+:global(._colValidFrom_ywcap_109),
+:global(._colValidTo_ywcap_111),
+:global(._colEntries_ywcap_113),
+:global(._colAction_ywcap_115) {
+  box-sizing: border-box;
+}
+
+:global(._colAction_ywcap_115) { display:flex; justify-content:center; }
+
+:global(._deleteBtn_ywcap_119) {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:global(._deleteBtn_ywcap_119 img) {
+  display: block;
+  width: 16px;
+  height: 17px;
+}
+
+@media (max-width: 900px) {
+  :global(._headerRow_ywcap_49), :global(._row_ywcap_77) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

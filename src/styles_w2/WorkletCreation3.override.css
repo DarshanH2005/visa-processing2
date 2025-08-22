@@ -1,0 +1,10 @@
+/* Worklet 3 specific overrides */
+.worklet3-scope .richtext-footer .design-btn {
+	background: #EEEEEE !important;
+	color: #000000 !important;
+}
+
+.worklet3-scope .richtext-footer .html-btn {
+	color: #000000 !important;
+}
+

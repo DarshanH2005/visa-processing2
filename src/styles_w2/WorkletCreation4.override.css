@@ -1,0 +1,7 @@
+/* Override styles for WorkletCreation4 (and copied WorkletCreation5) */
+.worklet4-root {
+  /* small safe overrides — keep visual parity with existing styles_w2 */
+}
+.worklet4-body {
+  /* no-op placeholder to satisfy imports */
+}

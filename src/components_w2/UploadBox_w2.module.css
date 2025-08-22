@@ -1,0 +1,32 @@
+.uploadContainer {
+  /* outer wrapper - don't stretch the dashed border full width */
+  display: block;
+  text-align: left;
+  margin-top: 8px;
+}
+.uploadLabel {
+  font-size: 16px;
+  font-weight: 600;
+}
+.uploadInner {
+  width: 440px; /* made a little wider */
+  margin: 0; /* align to left of container */
+  border: 1px dashed #d6d6d6;
+  border-radius: 10px;
+  
+  background: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.uploadIconLeft {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uploadIconSvg { width: 28px; height: 28px; }
+.uploadContent { flex: 1; display: flex; justify-content: flex-start; }

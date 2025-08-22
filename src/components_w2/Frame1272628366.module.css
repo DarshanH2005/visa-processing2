@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  /* inner border removed as requested */
+  border: none;
+  width: 400px;
+}
+.fileType img { width: 48px; height: 48px; }
+.content { flex: 1; }
+.filename { font-weight: 600; color: #0f172a; }
+.meta { display: flex; align-items: center; gap: 8px; color: #6b7280; font-size: 13px; }
+.dot { width: 4px; height: 4px; background: #98a2b3; border-radius: 50%; }
+.size { color: #6b7280; }
+.download img { width: 28px; height: 28px; }

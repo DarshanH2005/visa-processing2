@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.sectionTitle { font-weight: 700; font-size: 16px; line-height: 1.4; padding-top: 16px; padding-bottom: 8px; margin-bottom: 8px; }
+
+.left {
+  /* make the input column wider to give the date input more space */
+  flex: 0 0 495px;
+  max-width: 495px;
+}
+
+.right {
+  /* take remaining space */
+  flex: 1 1 auto;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #101928;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.required { color: #ef4444; }
+
+.inputFrame {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.leftContent { color: #202224; }
+
+.iconBtn { background: transparent; border: none; margin-left: auto; cursor: pointer; }
+
+.title { font-weight: 700; margin-bottom: 8px; }
+
+.radios { display: flex; gap: 16px; align-items: center; }
+
+.radio { display:flex; gap:8px; align-items:center; }
+.radio input { width:16px; height:16px; }
+.radioText { font-weight:700; }
+.radioTextMuted { color:#9aa0a6; }
+
+@media (max-width: 800px) {
+  .container { flex-direction: column; }
+  .right { width: 100%; }
+}
+
+/* global mapping for underscore-prefixed live markup */
+:global(._inputFrame_1shfq_51) {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  background: #f5f5f5;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+:global(._leftContent_1shfq_69) {
+  color: #202224;
+  font-size: 14px;
+  line-height: 20px;
+  flex: 1 1 auto;
+}
+
+:global(._iconBtn_1shfq_73) {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* style for the other input's classes if present so both look identical */
+:global(._inputFrame_j8q6v_41) {
+  display:flex; align-items:center; height:48px; background:#f5f5f5; border:1px solid #d0d5dd; border-radius:6px; padding:12px; box-sizing:border-box;
+}
+
+:global(._leftContent_j8q6v_69) { flex:1 1 auto; }
+
+:global(._input_j8q6v_41) {
+  width:100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size:14px;
+  color:#101928;
+}
+

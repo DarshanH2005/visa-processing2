@@ -1,0 +1,33 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  min-width: 120px;
+  padding: 0 12px 0 12px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #38aee0;
+  cursor: pointer;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #38aee0;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.label {
+  display: inline-block;
+}
+
+.pressed {
+  transform: translateY(1px);
+  opacity: 0.9;
+}

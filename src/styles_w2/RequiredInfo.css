@@ -1,0 +1,100 @@
+/* Copied RequiredInfo.css for worklet2 isolation - please keep in sync manually if needed. */
+/* Rich Text Editor styles */
+.worklet-richtext-section {
+  margin-top: 32px;
+}
+.worklet-richtext-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #101928;
+  margin-bottom: 8px;
+  font-family: "Samsung InterFace", Arial, sans-serif;
+  display: block;
+}
+.worklet-richtext-editor {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 0;
+  border: 1px solid #e0e0e0;
+}
+.richtext-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px 0 16px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f9fafb;
+}
+.richtext-content {
+  padding: 18px 16px 0 16px;
+  min-height: 180px;
+  font-family: "Samsung InterFace", Arial, sans-serif;
+  color: #202224;
+}
+/* trimmed for brevity in the copied file */
+.worklet-upload-box {
+  background: #fffbfa;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* limit width so it doesn't go full-screen */
+  max-width: 920px;
+}
+.worklet-upload-file {
+  display: flex;
+  /* subtle dashed border instead of heavy dotted */
+  border: 1px dashed #e6e8eb;
+  padding: 12px;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+}
+
+/* Action buttons at the bottom - match main styles */
+.action-buttons-container {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.btn-outline {
+  background: #ffffff;
+  color: #0b5fa5;
+  border: 1px solid #cfe8fb;
+}
+
+.btn-primary {
+  background: #0bb0ff;
+  color: #ffffff;
+  border: 1px solid #0bb0ff;
+}
+
+.section-label {
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #101828;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+}

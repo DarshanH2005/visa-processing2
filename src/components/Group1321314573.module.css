@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  background: #eff6ff; /* from spec */
+  height: 39px; /* from spec */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px; /* responsive padding */
+  box-sizing: border-box;
+  border-radius: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.transferIcon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.label {
+  color: #101928; /* text color from spec */
+  font-weight: 700; /* Bold */
+  font-size: 16px;
+  line-height: 1.45; /* approx 145% from spec */
+  white-space: nowrap;
+}
+
+.arrow {
+  width: 11px;
+  height: 19px;
+  transition: transform 200ms ease;
+  display: block;
+}
+
+.arrowOpen {
+  transform: rotate(90deg);
+}
+
+/* Small responsive tweaks */
+@media (max-width: 480px) {
+  .label {
+    font-size: 14px;
+  }
+  .container {
+    padding: 0 12px;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --text: #111827;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--text);
+  /* Keep page flow normal (do not center the entire app vertically) */
+  min-height: 100%;
+}
+
+/* App container: constrain width and center horizontally, but keep internal content left-aligned */
+.app {
+  max-width: 1200px;
+  margin: 24px auto; /* center horizontally, not vertically */
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(17,24,39,0.08);
+  text-align: left;
+}
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+button:hover { opacity: 0.95 }

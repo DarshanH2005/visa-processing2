@@ -1,0 +1,113 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+}
+
+.headerBand {
+  background: #eff6ff;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e4e7ec;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 120px 1fr 360px;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: #202224;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr 360px;
+  align-items: center;
+  padding: 18px 16px;
+  gap: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.mentorName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #101928;
+}
+
+.mentorEmail {
+  font-size: 14px;
+  color: #101928;
+}
+
+.radioWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* center the first header cell (Primary Mentor) so the radio aligns under it */
+.tableHeader > .headerLabel:first-child {
+  justify-self: center;
+  text-align: center;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #b8bac0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.radioInner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  transition: background 0.12s ease, transform 0.12s ease;
+}
+
+.checked {
+  border-color: #4b5563;
+}
+
+.checked .radioInner {
+  background: #4b5563;
+  transform: scale(1);
+}
+
+.radio:not(.checked) .radioInner {
+  transform: scale(0.9);
+}
+
+.radio:focus {
+  outline: 3px solid rgba(59,130,246,0.2);
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .tableHeader, .row {
+    grid-template-columns: 56px 1fr 1fr;
+  }
+  .card { border-radius: 4px; }
+}

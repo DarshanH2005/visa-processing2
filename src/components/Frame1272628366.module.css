@@ -1,0 +1,64 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  
+  border-radius: 8px;
+  padding: 6px 12px;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.fileType img {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.filename {
+  font-family: 'Samsung InterFace', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  color: #98a2b3;
+  font-size: 14px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background: #98a2b3;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.size {
+  color: #98a2b3;
+}
+
+.download img {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 720px) {
+  .card { padding: 8px; }
+  .filename { font-size: 13px; }
+  .meta { font-size: 12px; }
+}
