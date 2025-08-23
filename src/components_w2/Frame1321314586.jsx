@@ -3,10 +3,16 @@ import styles from './Frame1321314586.module.css';
 import TrashIcon from '../assets/trash-red.svg';
 import SubmitButton2 from './SubmitButton2';
 import Frame1272628575 from './Frame1272628575';
+import Group1321314688 from './Group1321314688';
+import Tooltip from './Tooltip';
 
 const Frame1321314586 = () => {
+  const [showNote, setShowNote] = useState(false);
+
   return (
     <div>
+      {/* Note button & tooltip placed at the top of the form */}
+      
       <div className="_table_ywcap_29" role="table" aria-label="visa-table">
         <div className="_tableHeader_ywcap_39" role="rowgroup">
           <div className="_headerRow_ywcap_49" role="row">

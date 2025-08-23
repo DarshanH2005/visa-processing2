@@ -105,11 +105,46 @@
   gap: 10px;
 }
 
+.required-info-note {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
 .worklet-details-card {
   background: #ffffff; /* make card white like reference */
   border-radius: 8px;
   padding: 20px 18px;
   border: 1px solid #eef0f2;
+  position: relative; /* allow absolutely positioned note */
+}
+.required-info-note.inside-card {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  margin-left: 0;
+}
+
+/* helper to add a note/icon to the right end of section headings */
+.section-heading-with-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-heading-with-note .section-heading {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1;
+}
+.section-heading-with-note .section-note {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.section-heading-with-note .section-note > * {
+  display: inline-flex;
+  align-items: center;
 }
 .worklet-details-title {
   font-size: 16px;

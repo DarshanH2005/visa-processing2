@@ -136,3 +136,32 @@
     grid-template-columns: repeat(6, 1fr);
   }
 }
+
+  /* Note toggle and popup (scoped to this module) */
+  .noteWrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .noteButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .notePopup {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    background: #ffffff;
+    border: 1px solid #e6e7eb;
+    box-shadow: 0 6px 18px rgba(15, 23, 36, 0.08);
+    border-radius: 8px;
+    z-index: 40;
+    width: 260px;
+  }
+  .notePopupInner {
+    padding: 12px;
+  }

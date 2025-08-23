@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/RequiredInfo.css';
 import '../styles/formControls.css';
 import InitiationTypeRadio from './InitiationTypeRadio';
+import Group1321314688 from './Group1321314688';
 import PassportInfoFields from './PassportInfoFields';
 import PersonalInfoFields from './PersonalInfoFields';
 import AddressField from './AddressField';
@@ -14,6 +15,7 @@ import Frame1321314586 from './Frame1321314586';
 import Frame1321314628 from './Frame1321314628';
 import Frame1321314629 from './Frame1321314629';
 import Frame1321314624 from './Frame1321314624';
+import Tooltip from './Tooltip';
 
 const Field = ({ label, required, children, className = '' }) => (
   <div className={`form-field ${className}`.trim()}>
@@ -23,9 +25,29 @@ const Field = ({ label, required, children, className = '' }) => (
 );
 
 const VisaForm = () => {
+  const [showNote2, setShowNote2] = useState(false);
   return (
     <div className="visa-form">
-      <h3 className="section-heading">Initiation Type</h3>
+      <div className="section-heading-with-note">
+        <h3 className="section-heading">Initiation Type</h3>
+        <div className="section-note">
+          <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center' }}>
+            <Group1321314688
+              onClick={() => setShowNote2(s => !s)}
+              aria-pressed={showNote2}
+              aria-label="Toggle note"
+            />
+            <Tooltip
+              visible={showNote2}
+              onClose={() => setShowNote2(false)}
+              title="Note:"
+              content={
+                  `<ol style="padding-left:18px; margin:0 0 8px 0;"><li>To enter Valid Visa details, please click on the respective column of grid and enter or select values.</li><li>If having more than one visa, press keyboard TAB key on last column after value selection to have a new row.</li><li>Select Country first and proceed for next entries in order to retain entry.</li></ol><p style="margin:8px 0 0 0;"><strong>Press Enter or TAB key on the last column on value selection to confirm or save entry in the grid.</strong></p>`
+                }
+            />
+          </div>
+        </div>
+      </div>
       <div className="row radio-row">
         <InitiationTypeRadio />
       </div>
